@@ -1,0 +1,32 @@
+#!/bin/bash
+
+ofile=$(pwd)/sysinfo.html
+
+function heading_start () {
+	heading=$1
+	echo "<li><a href=\"#\" onclick=\"toggleBullet(this)\">$heading</a><ul>">>$ofile
+}
+
+function sub_start () {
+	sub_heading=$1
+	echo "<li><a href=\"#\" onclick=\"toggleBullet(this)\">$sub_heading</a><ul><li><PRE>">>$ofile
+}
+
+function another_sub_start () {
+	sub_heading=$1
+	echo "<ul><li><a href=\"#\" onclick=\"toggleBullet(this)\">$sub_heading</a></ul>">>$ofile
+}
+
+function sub_end () {
+	echo "</PRE></li></ul>">>$ofile
+}
+
+function heading_end () {
+	echo "</ul></li>">>$ofile
+}
+
+function another1_sub_start () {
+	echo "</PRE></li></ul>">>$ofile
+	echo "<ul><li><PRE>">>$ofile
+}
+
