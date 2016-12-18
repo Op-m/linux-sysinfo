@@ -21,11 +21,11 @@ while getopts ":c:o::h" opt; do
       exit 1
       ;;
     h|*)
-      usage  
+      usage
       exit 0
       ;;
   esac
-  [ -z ${ofile} ] && export ofile='sysinfo.html'
 done
 
-runner_html
+[ -z ${ofile} ] && export ofile='sysinfo.html'
+[ -f ${txt_cmds} ] && runner_html || usage
