@@ -1,10 +1,10 @@
 #### How to run command:
-```
+```  
 sysinfo.sh -c cmd_list -o output.html
 ```
 > -c cmd_list is the template to use (see template setup below) [required]
 
-> -o output.html is the html output file [optional] (default: sysinfo.html)
+> -o output.html is the html output file (default: sysinfo.html) [optional] 
 
 > run with -h option to display help menu [optional]
 
