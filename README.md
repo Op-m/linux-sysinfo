@@ -1,7 +1,3 @@
-This is a simple script that creates a html output file and outputs any commands added.
-
-Example html output found [here](examples/example.html)
-
 #### How to run command:
 ```
 sysinfo.sh -c cmd_list -o output.html
