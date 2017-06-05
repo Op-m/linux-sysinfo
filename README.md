@@ -89,13 +89,13 @@ heading_end
 
 #### This script also supports more complicated commands (see below)
 
-###### Advanced example 1:
+###### Advanced Example 1:
 ```bash
 sub_start "Advanced Example 1"
   run_command "[ -f /etc/hosts ] && echo 'File Exist' && grep 'local' /etc/hosts | wc -l"
 sub_end
 ```
-###### Advanced example 2:
+###### Advanced Example 2:
 ```bash
 sub_start "Advanced example 2"
   ifconfig | grep 'eth\|lo' | cut -c1-4 >interfaces.tmp
@@ -106,7 +106,7 @@ sub_start "Advanced example 2"
   rm -f interfaces.tmp
 sub_end
 ```
-###### Loop example:
+###### Loop Example:
 ```bash
 sub_start "Loop Example"
   for i in {1..5}
